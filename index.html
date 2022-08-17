@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_scroll.css">
+    <!-- <script src="script.js" defer></script> -->
+    <script src="script1.js" defer></script>
+    <script src="theme.js" defer></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+    </style>
+</head>
+
+<body>
+    <header>
+        <button type="button" id="set-time">TIMER</button>
+        <h1>T I M E R</h1>
+    </header>
+
+    <nav>
+        <form>
+            <input type="number" id="hour" placeholder="HOUR" min="0" max="24" value="0">
+            <input type="number" id="minute" placeholder="MINUTE" min="0" max="59" value="0">
+            <input type="number" id="second" placeholder="SECOND" min="0" max="59" value="0">
+            <input type="submit">
+        </form>
+    </nav>
+
+    <div class="popup">
+        <h3 id="popup-text"></h3>
+    </div>
+    
+    <div class="container">
+        <h1 id="show-time">00:00:00</h1>
+    </div>
+    
+    <div class="button-section">
+        <button type="button" id="stop" class="stop-watch action-button">STOP</button>
+        <button type="button" id="reset" class="reset-watch action-button">RESET</button>
+    </div>
+    
+    <footer>
+        <a href="information.html" target="_blank" title="developer">Developer</a>
+    </footer>
+</body>
+
+</html>
