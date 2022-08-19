@@ -24,9 +24,12 @@
 
     <nav>
         <form>
-            <input type="number" id="hour" placeholder="HOUR" min="0" max="24" value="0">
-            <input type="number" id="minute" placeholder="MINUTE" min="0" max="59" value="0">
-            <input type="number" id="second" placeholder="SECOND" min="0" max="59" value="0">
+            <label for="hour">HOUR:</label>
+            <input type="number" id="hour" placeholder="HOUR" min="0" max="24" value="0" required>
+            <label for="mintue">MINUTE:</label>
+            <input type="number" id="minute" placeholder="MINUTE" min="0" max="59" value="0" required>
+            <label for="second">SECOND:</label>
+            <input type="number" id="second" placeholder="SECOND" min="0" max="59" value="0" required>
             <input type="submit">
         </form>
     </nav>
