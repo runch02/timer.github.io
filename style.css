@@ -92,6 +92,10 @@ nav form input {
     font-size: 1rem;
 }
 
+nav form input::placeholder {
+    color: black;
+}
+
 .popup {
     width: 270px;
     height: 100px;
