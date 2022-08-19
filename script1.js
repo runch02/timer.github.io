@@ -34,21 +34,28 @@ class Timer {
 
     // give updated values to previously initialized variables
     getTimeValue() {
-        this.hourNumber = Math.floor(parseInt(this.hour.value))
-        this.minuteNumber = Math.floor(parseInt(this.minute.value))
-        this.secondNumber = Math.floor(parseInt(this.second.value))
+        // if (this.hour.value === "" || this.minute.value === "" || this.second.value === "") {
+            // return alert("Fill all the input field, every field is required to be filled!")
+            // this.hourNumber = 0
+            // this.minuteNumber = 0
+            // this.secondNumber = 0
+        // } else {
+            this.hourNumber = Math.floor(parseInt(this.hour.value))
+            this.minuteNumber = Math.floor(parseInt(this.minute.value))
+            this.secondNumber = Math.floor(parseInt(this.second.value))
 
-        this.totalSecond = Math.floor((this.hourNumber * 60 * 60) + (this.minuteNumber * 60) + (this.secondNumber))
+            this.totalSecond = Math.floor((this.hourNumber * 60 * 60) + (this.minuteNumber * 60) + (this.secondNumber))
 
-        this.flag = true
+            this.flag = true
 
-        document.querySelector("nav").style.left = "-280px"
+            document.querySelector("nav").style.left = "-280px"
 
-        document.querySelector("#set-time").innerText = "TIMER"
+            document.querySelector("#set-time").innerText = "TIMER"
 
-        this.showHideButton("visible")
+            this.showHideButton("visible")
 
-        this.clearInputValue()
+            this.clearInputValue()
+        // }
     }
 
     // stop and resume the watch according the switch condition
